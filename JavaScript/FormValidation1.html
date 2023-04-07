@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation 1</title>
+    <script src="FormValidation1.js"></script>
+</head>
+<body>
+    <form onsubmit="return validation()" action="ActionFileFormValidation1.html">  <!-- here if return from the function is true then form will submit the data otherwise it will not submit -->
+        <input type="UserName" id="UName" placeholder="UserName"> <br><br>
+        <input type="passward" id="pass" placeholder="Passward"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- We can also do the same without using js-->
+    <form action="ActionFileFormValidation1.html">  
+        <input type="UserName"  placeholder="UserName" required> <br><br>
+        <input type="passward"  placeholder="Passward" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
